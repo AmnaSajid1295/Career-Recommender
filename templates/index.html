@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Career Path Finder</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>🌟 Discover Your Ideal Career Path</h1>
+    <p>Answer these 10 questions to find your best-fit profession across any field:</p>
+
+    <form id="quizForm">
+      <div class="question">
+        <label>Your Name:</label><br />
+        <input type="text" id="username" placeholder="Enter your name" required />
+      </div>
+
+      <div class="question">
+        <label>1. What type of activities do you enjoy most?</label><br />
+        <input type="checkbox" name="q1" value="coding" /> Writing code or solving logic problems<br />
+        <input type="checkbox" name="q1" value="painting" /> Drawing, painting or crafts<br />
+        <input type="checkbox" name="q1" value="music" /> Singing or playing music<br />
+        <input type="checkbox" name="q1" value="sports" /> Playing sports or physical games<br />
+      </div>
+
+      <div class="question">
+        <label>2. What motivates you the most?</label><br />
+        <input type="checkbox" name="q2" value="helping" /> Helping people<br />
+        <input type="checkbox" name="q2" value="money" /> Earning a high salary<br />
+        <input type="checkbox" name="q2" value="creativity" /> Expressing creativity<br />
+        <input type="checkbox" name="q2" value="learning" /> Gaining new knowledge<br />
+      </div>
+
+      <div class="question">
+        <label>3. Which of these skills do you relate to?</label><br />
+        <input type="checkbox" name="q3" value="communication" /> Explaining ideas clearly<br />
+        <input type="checkbox" name="q3" value="drawing" /> Visualizing or sketching designs<br />
+        <input type="checkbox" name="q3" value="team" /> Working in a team<br />
+        <input type="checkbox" name="q3" value="solo" /> Working independently<br />
+      </div>
+
+      <div class="question">
+        <label>4. What school subjects do/did you like?</label><br />
+        <input type="checkbox" name="q4" value="math" /> Math<br />
+        <input type="checkbox" name="q4" value="biology" /> Biology<br />
+        <input type="checkbox" name="q4" value="social" /> Social Science<br />
+        <input type="checkbox" name="q4" value="literature" /> Literature / English<br />
+      </div>
+
+      <div class="question">
+        <label>5. Which hobbies interest you?</label><br />
+        <input type="checkbox" name="q5" value="writing" /> Blogging or journaling<br />
+        <input type="checkbox" name="q5" value="cooking" /> Cooking<br />
+        <input type="checkbox" name="q5" value="video" /> Making videos or reels<br />
+        <input type="checkbox" name="q5" value="travel" /> Exploring new places<br />
+      </div>
+
+      <div class="question">
+        <label>6. Which of these describe you?</label><br />
+        <input type="checkbox" name="q6" value="justice" /> Passionate about fairness and justice<br />
+        <input type="checkbox" name="q6" value="risk" /> Willing to take risks<br />
+        <input type="checkbox" name="q6" value="visuals" /> Visual thinker<br />
+        <input type="checkbox" name="q6" value="mental" /> Deeply empathetic or a good listener<br />
+      </div>
+
+      <div class="question">
+        <label>7. What kind of workplace do you prefer?</label><br />
+        <input type="checkbox" name="q7" value="remote" /> Remote and flexible<br />
+        <input type="checkbox" name="q7" value="fast" /> Fast-paced and competitive<br />
+        <input type="checkbox" name="q7" value="fieldwork" /> Outdoor or travel-based<br />
+        <input type="checkbox" name="q7" value="routine" /> Structured and predictable<br />
+      </div>
+
+      <div class="question">
+        <label>8. If you had a weekend project, what would you choose?</label><br />
+        <input type="checkbox" name="q8" value="blog" /> Write a blog or article<br />
+        <input type="checkbox" name="q8" value="build" /> Build a robot or device<br />
+        <input type="checkbox" name="q8" value="act" /> Rehearse for a play or role<br />
+        <input type="checkbox" name="q8" value="garden" /> Start a garden or nature journal<br />
+      </div>
+
+      <div class="question">
+        <label>9. What do you value in a job?</label><br />
+        <input type="checkbox" name="q9" value="impact" /> Making an impact<br />
+        <input type="checkbox" name="q9" value="stability" /> Job security<br />
+        <input type="checkbox" name="q9" value="fame" /> Recognition and fame<br />
+        <input type="checkbox" name="q9" value="freedom" /> Freedom and flexibility<br />
+      </div>
+
+      <div class="question">
+        <label>10. Which of these interests you?</label><br />
+        <input type="checkbox" name="q10" value="business" /> Starting a business<br />
+        <input type="checkbox" name="q10" value="health" /> Human body and health<br />
+        <input type="checkbox" name="q10" value="nature" /> Wildlife and environment<br />
+        <input type="checkbox" name="q10" value="drawing" /> Architectural or building design<br />
+      </div>
+
+      <button type="submit">🎯 Find My Career Match</button>
+    </form>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
